@@ -3,7 +3,7 @@
 @namespace      github.com/abhishekpaul724/gruvbox-material-hard/deepseek-gruvbox-material-hard
 @version        1.0.0
 @description    A Gruvbox Material Hard Dark theme for DeepSeek.
-@author         Abhishek Paul
+@author         Your Name
 @license        MIT
 ==/UserStyle== */
 @-moz-document url-prefix("https://chat.deepseek.com/") {
@@ -20,6 +20,7 @@
         --gruvbox-blue: #7daea3;
         --gruvbox-gray-2: #a89984;
         --gruvbox-red: #ea6962;
+        --gruvbox-orange: #e78a4e;
     }
 
     body {
@@ -84,6 +85,6 @@
     }
 
     ._020ab5b:focus-within {
-        border: 1px solid #e78a4e !important;
+        border: 1px solid var(--gruvbox-orange) !important;
     }
 }
