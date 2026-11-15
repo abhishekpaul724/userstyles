@@ -1,0 +1,89 @@
+/* ==UserStyle==
+@name           DeepSeek Gruvbox Material Hard Theme
+@namespace      github.com/abhishekpaul724/gruvbox-material-hard/deepseek-gruvbox-material-hard
+@version        1.0.0
+@description    A Gruvbox Material Hard Dark theme for DeepSeek.
+@author         Your Name
+@license        MIT
+==/UserStyle== */
+@-moz-document url-prefix("https://chat.deepseek.com/") {
+    :root {
+        --gruvbox-green: #a9b665;
+        --gruvbox-bg-dim: #141617;
+        --gruvbox-bg-3: #3c3836;
+        --gruvbox-fg-1: #ddc7a1;
+        --gruvbox-fg-0: #d4be98;
+        --gruvbox-yellow: #d8a657;
+        --gruvbox-gray-0: #7c6f64;
+        --gruvbox-bg-1: #282828;
+        --gruvbox-bg-5: #504945;
+        --gruvbox-blue: #7daea3;
+        --gruvbox-gray-2: #a89984;
+        --gruvbox-red: #ea6962;
+    }
+
+    body {
+        background-color: var(--gruvbox-bg-1) !important;
+        --dsw-static-neutral-bluish-00: var(--gruvbox-bg-1);
+        --dsw-static-neutral-bluish-1000: var(--gruvbox-fg-1);
+        --dsw-static-neutral-bluish-50: var(--gruvbox-bg-1);
+        --dsw-static-deepseek-100: var(--gruvbox-bg-3);
+        --dsw-static-deepseek-300: var(--gruvbox-green);
+        --dsw-static-deepseek-500: var(--gruvbox-green);
+        --dsw-static-deepseek-50: var(--gruvbox-bg-3);
+        --dsw-alias-interactive-bg-hover: var(--gruvbox-bg-5);
+        --dsw-static-neutral-bluish-75: var(--gruvbox-blue);
+        --dsw-static-neutral-bluish-100: var(--gruvbox-bg-3);
+        --dsw-static-neutral-bluish-1000: var(--gruvbox-fg-1);
+        --dsw-static-neutral-300: var(--gruvbox-gray-0);
+        --dsw-static-neutral-bluish-700: var(--gruvbox-gray-2);
+        --dsw-static-neutral-200: var(--gruvbox-gray-0);
+    }
+
+    ._5a8ac7a:hover {
+        border: 1px solid var(--gruvbox-yellow);
+        box-shadow: none !important;
+    }
+
+    ._5a8ac7a {
+        box-shadow: none;
+        border: 1.5px solid var(--gruvbox-bg-5);
+    }
+
+    @media (hover: hover) {
+        ._546d736:not(.b64fb9ae):hover {
+            color: var(--gruvbox-bg-dim);
+        }
+    }
+
+    ._546d736.b64fb9ae {
+        background-color: var(--gruvbox-green);
+        color: var(--gruvbox-bg-dim);
+    }
+
+    .ds-markdown-cite {
+        background-color: var(--gruvbox-bg-3) !important;
+        color: var(--gruvbox-fg-0) !important;
+    }
+
+    ._546d736 ._254829d {
+        background: none !important;
+    }
+
+    .ds-icon {
+        color: var(--gruvbox-yellow) !important;
+    }
+
+    .ds-lottie-toggle-icon svg path[stroke] {
+        stroke: var(--gruvbox-green);
+    }
+
+    ::selection {
+        background-color: var(--gruvbox-red);
+        color: var(--gruvbox-bg-dim);
+    }
+
+    ._020ab5b:focus-within {
+        border: 1px solid #e78a4e !important;
+    }
+}
