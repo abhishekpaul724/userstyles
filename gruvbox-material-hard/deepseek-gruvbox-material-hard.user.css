@@ -8,19 +8,19 @@
 ==/UserStyle== */
 @-moz-document url-prefix("https://chat.deepseek.com/") {
     :root {
-        --gruvbox-green: #a9b665;
         --gruvbox-bg-dim: #141617;
+        --gruvbox-bg-1: #282828;
         --gruvbox-bg-3: #3c3836;
+        --gruvbox-bg-5: #504945;
         --gruvbox-fg-1: #ddc7a1;
         --gruvbox-fg-0: #d4be98;
-        --gruvbox-yellow: #d8a657;
-        --gruvbox-gray-0: #7c6f64;
-        --gruvbox-bg-1: #282828;
-        --gruvbox-bg-5: #504945;
-        --gruvbox-blue: #7daea3;
-        --gruvbox-gray-2: #a89984;
         --gruvbox-red: #ea6962;
+        --gruvbox-green: #a9b665;
+        --gruvbox-blue: #7daea3;
+        --gruvbox-yellow: #d8a657;
         --gruvbox-orange: #e78a4e;
+        --gruvbox-grey-0: #7c6f64;
+        --gruvbox-grey-2: #a89984;
     }
 
     body {
@@ -36,9 +36,9 @@
         --dsw-static-neutral-bluish-75: var(--gruvbox-blue);
         --dsw-static-neutral-bluish-100: var(--gruvbox-bg-3);
         --dsw-static-neutral-bluish-1000: var(--gruvbox-fg-1);
-        --dsw-static-neutral-300: var(--gruvbox-gray-0);
-        --dsw-static-neutral-bluish-700: var(--gruvbox-gray-2);
-        --dsw-static-neutral-200: var(--gruvbox-gray-0);
+        --dsw-static-neutral-300: var(--gruvbox-grey-0);
+        --dsw-static-neutral-bluish-700: var(--gruvbox-grey-2);
+        --dsw-static-neutral-200: var(--gruvbox-grey-0);
     }
 
     ._5a8ac7a:hover {
@@ -86,5 +86,12 @@
 
     ._020ab5b:focus-within {
         border: 1px solid var(--gruvbox-orange) !important;
+    }
+
+    ._189b4a0 ._6ffc3c9 {
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
+        background-color: var(--gruvbox-bg-1);
+        border-radius: 0 !important;
     }
 }
