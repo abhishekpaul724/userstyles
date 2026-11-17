@@ -9,6 +9,7 @@
 @-moz-document url-prefix("https://chat.deepseek.com/") {
     :root {
         --gruvbox-bg-dim: #141617;
+        --gruvbox-bg-0: #1d2021;
         --gruvbox-bg-1: #282828;
         --gruvbox-bg-3: #3c3836;
         --gruvbox-bg-5: #504945;
@@ -24,18 +25,18 @@
     }
 
     body {
-        background-color: var(--gruvbox-bg-1) !important;
-        --dsw-static-neutral-bluish-00: var(--gruvbox-bg-1);
-        --dsw-static-neutral-bluish-1000: var(--gruvbox-fg-1);
-        --dsw-static-neutral-bluish-50: var(--gruvbox-bg-1);
-        --dsw-static-deepseek-100: var(--gruvbox-bg-3);
+        background-color: var(--gruvbox-bg-0) !important;
+        --dsw-static-neutral-bluish-00: var(--gruvbox-bg-0);
+        --dsw-static-neutral-bluish-1000: var(--gruvbox-fg-0);
+        --dsw-static-neutral-bluish-50: var(--gruvbox-bg-0);
+        --dsw-static-deepseek-100: var(--gruvbox-bg-1);
         --dsw-static-deepseek-300: var(--gruvbox-green);
         --dsw-static-deepseek-500: var(--gruvbox-green);
-        --dsw-static-deepseek-50: var(--gruvbox-bg-3);
-        --dsw-alias-interactive-bg-hover: var(--gruvbox-bg-5);
+        --dsw-static-deepseek-50: var(--gruvbox-bg-1);
+        --dsw-alias-interactive-bg-hover: var(--gruvbox-bg-3);
         --dsw-static-neutral-bluish-75: var(--gruvbox-blue);
-        --dsw-static-neutral-bluish-100: var(--gruvbox-bg-3);
-        --dsw-static-neutral-bluish-1000: var(--gruvbox-fg-1);
+        --dsw-static-neutral-bluish-100: var(--gruvbox-bg-1);
+        --dsw-static-neutral-bluish-1000: var(--gruvbox-fg-0);
         --dsw-static-neutral-300: var(--gruvbox-grey-0);
         --dsw-static-neutral-bluish-700: var(--gruvbox-grey-2);
         --dsw-static-neutral-200: var(--gruvbox-grey-0);
@@ -49,7 +50,7 @@
 
     ._5a8ac7a {
         box-shadow: none;
-        border: 1.5px solid var(--gruvbox-bg-5);
+        border: 1.5px solid var(--gruvbox-bg-3);
     }
 
     @media (hover: hover) {
@@ -64,7 +65,7 @@
     }
 
     .ds-markdown-cite {
-        background-color: var(--gruvbox-bg-3) !important;
+        background-color: var(--gruvbox-bg-1) !important;
         color: var(--gruvbox-fg-0) !important;
     }
 
@@ -92,7 +93,7 @@
     ._189b4a0 ._6ffc3c9 {
         -webkit-backdrop-filter: none !important;
         backdrop-filter: none !important;
-        background-color: var(--gruvbox-bg-1);
+        background-color: var(--gruvbox-bg-0);
         border-radius: 0 !important;
     }
 }
