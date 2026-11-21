@@ -25,6 +25,7 @@
     }
 
     body {
+        font-family: "IBM Plex Sans" !important;
         background-color: var(--gruvbox-bg-0) !important;
         --dsw-static-neutral-bluish-00: var(--gruvbox-bg-0);
         --dsw-static-neutral-bluish-1000: var(--gruvbox-fg-0);
@@ -85,8 +86,9 @@
         background-color: var(--gruvbox-red);
         color: var(--gruvbox-bg-dim);
     }
-
+    
     ._020ab5b:focus-within {
+        background-color: var(--gruvbox-bg-0);
         border: 1px solid var(--gruvbox-orange) !important;
     }
 
@@ -95,5 +97,13 @@
         backdrop-filter: none !important;
         background-color: var(--gruvbox-bg-0);
         border-radius: 0 !important;
+    }
+    
+    .a2f3d50e {
+        border-right: 1px solid var(--gruvbox-bg-1);
+    }
+    
+    .ds-markdown, table {
+        font-family: "IBM Plex Sans" !important;
     }
 }
