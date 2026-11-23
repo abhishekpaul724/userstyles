@@ -28,7 +28,6 @@
         font-family: "IBM Plex Sans" !important;
         background-color: var(--gruvbox-bg-0) !important;
         --dsw-static-neutral-bluish-00: var(--gruvbox-bg-0);
-        --dsw-static-neutral-bluish-1000: var(--gruvbox-fg-0);
         --dsw-static-neutral-bluish-50: var(--gruvbox-bg-0);
         --dsw-static-deepseek-100: var(--gruvbox-bg-1);
         --dsw-static-deepseek-300: var(--gruvbox-green);
@@ -44,23 +43,23 @@
         --dsw-static-deepseek-450: var(--gruvbox-blue);
     }
 
-    ._5a8ac7a:hover {
+    div[tabindex="0"]:has(> .ds-icon):has(> .ds-focus-ring):hover {
         border: 1px solid var(--gruvbox-yellow);
         box-shadow: none !important;
     }
 
-    ._5a8ac7a {
+    div[tabindex="0"]:has(> .ds-icon):has(> .ds-focus-ring) {
         box-shadow: none;
         border: 1.5px solid var(--gruvbox-bg-3);
     }
 
     @media (hover: hover) {
-        ._546d736:not(.b64fb9ae):hover {
+        a[tabindex="0"]:has(> .ds-focus-ring):not(.b64fb9ae):hover {
             color: var(--gruvbox-bg-dim);
         }
     }
 
-    ._546d736.b64fb9ae {
+    a[tabindex="0"]:has(> .ds-focus-ring).b64fb9ae {
         background-color: var(--gruvbox-green);
         color: var(--gruvbox-bg-dim);
     }
@@ -70,7 +69,7 @@
         color: var(--gruvbox-fg-0) !important;
     }
 
-    ._546d736 ._254829d {
+    div:has(> div[tabindex="0"][role="button"].ds-button--icon) {
         background: none !important;
     }
 
@@ -87,20 +86,17 @@
         color: var(--gruvbox-bg-dim);
     }
     
-    ._020ab5b:focus-within {
-        background-color: var(--gruvbox-bg-0);
+    div.focused:has(textarea[placeholder="Message DeepSeek"]) {
+        background-color: var(--gruvbox-bg-0) !important;
         border: 1px solid var(--gruvbox-orange) !important;
     }
-
-    ._189b4a0 ._6ffc3c9 {
-        -webkit-backdrop-filter: none !important;
-        backdrop-filter: none !important;
-        background-color: var(--gruvbox-bg-0);
-        border-radius: 0 !important;
+    
+    div:has(clipPath > rect[transform="translate(0.163086 1.75)"]) {
+        border-right: 1px solid var(--gruvbox-bg-1);
     }
     
-    .a2f3d50e {
-        border-right: 1px solid var(--gruvbox-bg-1);
+    div:has(+div.ds-scroll-area--enabled) {
+        background-color: var(--gruvbox-bg-0) !important;
     }
     
     .ds-markdown, table {
